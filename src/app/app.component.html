@@ -1,0 +1,4 @@
+<div [ngClass]="{ 'back-drop': sidebarFlag }" (click)="toggleSidebar()"></div>
+<app-header (toggle)="toggleSidebar()"></app-header>
+<app-sidebar [ngClass]="{ 'no-disp': !sidebarFlag }"></app-sidebar>
+<app-main-layout></app-main-layout>
