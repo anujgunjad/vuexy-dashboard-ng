@@ -1,10 +1,9 @@
-<!-- <div [ngClass]="{ 'back-drop': sidebarFlag }" (click)="toggleSidebar()"></div>
-<app-header (toggle)="toggleSidebar()"></app-header>
-<app-sidebar [ngClass]="{ 'no-disp': !sidebarFlag }"></app-sidebar>
-<app-main-layout></app-main-layout> -->
 <mat-sidenav-container>
-  <mat-sidenav opened mode="side">Sidenav</mat-sidenav>
+  <mat-sidenav mode="side" #sidenav opened position="start">
+    <app-sidebar [ngClass]="{ 'no-disp': !sidebarFlag }"></app-sidebar>
+  </mat-sidenav>
+
   <mat-sidenav-content>
-    <app-header (toggle)="toggleSidebar()"></app-header>
+    <app-main-layout></app-main-layout>
   </mat-sidenav-content>
 </mat-sidenav-container>

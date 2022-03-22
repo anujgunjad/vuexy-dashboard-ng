@@ -2,12 +2,45 @@ mat-sidenav-container {
   height: 100vh;
 }
 
-mat-sidenav,
-mat-sidenav-content {
-  padding: 1.6rem;
+app-header {
+  position: fixed;
+  right: 0;
+  width: calc(100% - 4rem - 260px);
+  background: #fff;
+  margin: 1.3rem 2rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 0.428rem;
+  transition: all 0.4s;
+  box-shadow: 0 0.1rem 0.4rem 0 rgba(85, 85, 85, 0.2),
+    0 0.2rem 1rem 0 rgba(85, 85, 85, 0.19);
+  z-index: 9999;
 }
 
 mat-sidenav {
-  background-color: aqua;
-  width: 260px;
+  position: fixed;
+  display: flex;
+  width: 24rem;
+  max-width: 24rem;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ffff;
 }
+
+mat-sidenav-content {
+  padding: 2rem;
+}
+
+// mat-toolbar {
+//   position: sticky;
+//   position: -webkit-sticky; /* For macOS/iOS Safari */
+//   top: 0; /* Sets the sticky toolbar to be on top */
+//   z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+//   background: #fff;
+//   margin-right: 4rem;
+//   padding: 0.8rem 1rem;
+//   border-radius: 0.428rem;
+//   transition: all 0.4s;
+//   box-shadow: 0 0.1rem 0.4rem 0 rgba(85, 85, 85, 0.2),
+//     0 0.2rem 1rem 0 rgba(85, 85, 85, 0.19);
+//   z-index: 9999;
+// }

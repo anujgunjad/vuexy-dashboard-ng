@@ -15,7 +15,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { ClientTableComponent } from './client-table/client-table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -45,6 +45,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatTableModule,
     MatPaginatorModule,
     MatSidenavModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
