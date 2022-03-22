@@ -3,7 +3,7 @@
 <app-sidebar [ngClass]="{ 'no-disp': !sidebarFlag }"></app-sidebar>
 <app-main-layout></app-main-layout> -->
 <mat-sidenav-container>
-  <mat-sidenav mode="push">Sidenav</mat-sidenav>
+  <mat-sidenav opened mode="side">Sidenav</mat-sidenav>
   <mat-sidenav-content>
     <app-header (toggle)="toggleSidebar()"></app-header>
   </mat-sidenav-content>
