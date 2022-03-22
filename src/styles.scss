@@ -66,52 +66,52 @@ canvas {
   height: 100% !important;
 }
 
-app-root {
-  width: 100%;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-}
+// app-root {
+//   width: 100%;
+//   display: flex;
+//   overflow: hidden;
+//   position: relative;
+// }
 
-app-sidebar {
-  position: fixed;
-  display: flex;
-  width: 26rem;
-  max-width: 26rem;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #ffff;
-  overflow-y: scroll; /* Add the ability to scroll */
-  scrollbar-width: none; /* Firefox 64 */
-  z-index: 99999999;
+// app-sidebar {
+//   position: fixed;
+//   display: flex;
+//   width: 26rem;
+//   max-width: 26rem;
+//   flex-direction: column;
+//   height: 100vh;
+//   background-color: #ffff;
+//   overflow-y: scroll; /* Add the ability to scroll */
+//   scrollbar-width: none; /* Firefox 64 */
+//   z-index: 99999999;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+// }
 
-@media only screen and (max-width: 1200px) {
-  app-sidebar {
-    transition: width 0.25s, opacity 0.25s, transform 0.25s,
-      -webkit-transform 0.25s;
-    transform: translate(0);
+// @media only screen and (max-width: 1200px) {
+//   app-sidebar {
+//     transition: width 0.25s, opacity 0.25s, transform 0.25s,
+//       -webkit-transform 0.25s;
+//     transform: translate(0);
 
-    &.no-disp {
-      transform: translate(-260px);
-    }
-  }
-  app-main-layout {
-    margin-left: 0 !important;
-  }
-  app-header {
-    width: calc(100% - 4rem) !important;
-  }
-}
+//     &.no-disp {
+//       transform: translate(-260px);
+//     }
+//   }
+//   app-main-layout {
+//     margin-left: 0 !important;
+//   }
+//   app-header {
+//     width: calc(100% - 4rem) !important;
+//   }
+// }
 
 app-header {
   position: fixed;
   right: 0;
-  width: calc(100% - 4rem - 260px);
+  width: calc(100% - 4rem);
   background: #fff;
   margin: 1.3rem 2rem 0;
   padding: 0.8rem 1rem;
@@ -122,12 +122,12 @@ app-header {
   z-index: 9999;
 }
 
-app-main-layout {
-  width: 100%;
-  transition: all 0.4s;
-  padding: 9.75rem 2rem 0;
-  margin-left: 260px;
-}
+// app-main-layout {
+//   width: 100%;
+//   transition: all 0.4s;
+//   padding: 9.75rem 2rem 0;
+//   margin-left: 260px;
+// }
 
 .divider {
   width: 100% !important;
@@ -136,14 +136,14 @@ app-main-layout {
   background-color: rgb(226, 226, 226);
 }
 
-.back-drop {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  z-index: 99999;
-  background-color: rgba(0, 0, 0, 0.466);
-  transition: all 0.4s;
-}
+// .back-drop {
+//   position: fixed;
+//   height: 100vh;
+//   width: 100%;
+//   z-index: 99999;
+//   background-color: rgba(0, 0, 0, 0.466);
+//   transition: all 0.4s;
+// }
 
 @media only screen and (max-width: 576px) {
   html {

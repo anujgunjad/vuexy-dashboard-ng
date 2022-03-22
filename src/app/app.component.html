@@ -1,4 +1,10 @@
-<div [ngClass]="{ 'back-drop': sidebarFlag }" (click)="toggleSidebar()"></div>
+<!-- <div [ngClass]="{ 'back-drop': sidebarFlag }" (click)="toggleSidebar()"></div>
 <app-header (toggle)="toggleSidebar()"></app-header>
 <app-sidebar [ngClass]="{ 'no-disp': !sidebarFlag }"></app-sidebar>
-<app-main-layout></app-main-layout>
+<app-main-layout></app-main-layout> -->
+<mat-sidenav-container>
+  <mat-sidenav mode="push">Sidenav</mat-sidenav>
+  <mat-sidenav-content>
+    <app-header (toggle)="toggleSidebar()"></app-header>
+  </mat-sidenav-content>
+</mat-sidenav-container>

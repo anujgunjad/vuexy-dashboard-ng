@@ -20,6 +20,8 @@ import { MatTableModule } from '@angular/material/table';
 import { ClientTableComponent } from './client-table/client-table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
