@@ -1,3 +1,16 @@
+.navbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  background: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 0.428rem;
+  transition: all 0.4s;
+  box-shadow: 0 0.1rem 0.4rem 0 rgba(85, 85, 85, 0.2),
+    0 0.2rem 1rem 0 rgba(85, 85, 85, 0.19);
+  z-index: 9999;
+}
+
 .header_wrp {
   display: flex;
   justify-content: space-between;
