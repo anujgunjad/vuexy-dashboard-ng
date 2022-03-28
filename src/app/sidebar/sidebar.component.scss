@@ -37,6 +37,10 @@
 
 .nav_menu {
   padding: 0 2.4rem;
+
+  ul {
+    padding-left: 0 !important;
+  }
 }
 
 mat-icon {

@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { ClientTableComponent } from './client-table/client-table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
