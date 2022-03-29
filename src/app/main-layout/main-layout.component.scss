@@ -4,7 +4,7 @@
 
 .main_layout_wrp {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 2.7rem;
 }
 
 .top-header {
@@ -35,22 +35,22 @@
 }
 
 .cm12 {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
   display: flex;
   flex-flow: column;
 }
 
 .cs6 {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
 .cl6 {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
   flex: 0 0 50%;
   max-width: 50%;
   display: flex;
@@ -59,15 +59,15 @@
 .cl3 {
   flex: 0 0 25%;
   max-width: 25%;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
 }
 
 .cl4 {
   display: flex;
   flex-flow: column;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
   position: relative;
   width: 100%;
 }
@@ -100,8 +100,8 @@
   }
 }
 .c12 {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
   display: flex !important;
   justify-content: flex-start !important;
   align-items: center !important;
@@ -113,15 +113,15 @@
 
 .card {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 2.6rem;
   display: flex;
   flex-direction: column;
   min-width: 0;
   box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
   flex: 1 1 auto;
   transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
-  border-radius: 0.428rem;
-
+  border-radius: 1rem;
+  border: none !important;
   .card-header {
     border-bottom: none;
     padding: 1.5rem;
