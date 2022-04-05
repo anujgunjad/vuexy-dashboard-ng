@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { ChartData, ChartOptions } from 'chart.js';
 
 interface Entry {
@@ -12,29 +18,24 @@ interface Entry {
   styleUrls: ['./main-layout.component.scss'],
 })
 export class MainLayoutComponent implements OnInit {
+  @ViewChild('lineChartOne') lineChartOne: ElementRef;
+  @ViewChild('lineChartTwo') lineChartTwo: ElementRef;
+
+  gradient: any = null;
+
   entries: Entry[] = [
     { value: 10, viewValue: 10 },
     { value: 20, viewValue: 20 },
     { value: 30, viewValue: 30 },
   ];
 
-  lineSalesData: ChartData<'line'> = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
-    datasets: [
-      {
-        pointStyle: 'circle',
-        pointBackgroundColor: '#7367f0',
-        borderColor: '#7367f0',
-        data: [100, 116, 99, 141, 115],
-        tension: 0.4,
-      },
-    ],
-  };
+  lineSalesDataOne: ChartData<'line'>;
+  lineSalesDataTwo: ChartData<'line'>;
 
   lineChartOptions: ChartOptions = {
     elements: {
       point: {
-        radius: 4,
+        radius: 0,
       },
     },
     plugins: {
@@ -238,7 +239,47 @@ export class MainLayoutComponent implements OnInit {
     },
   };
 
-  constructor() {}
+  constructor(private _cd: ChangeDetectorRef) {}
 
   ngOnInit(): void {}
+
+  ngAfterViewInit() {
+    let ctxOne = this.lineChartOne.nativeElement.getContext('2d');
+    let gradientOne = ctxOne.createLinearGradient(0, 0, 0, 90);
+    gradientOne.addColorStop(0, 'rgb(218,215,251)');
+    gradientOne.addColorStop(1, '#fff');
+
+    let ctxTwo = this.lineChartTwo.nativeElement.getContext('2d');
+    let gradientTwo = ctxTwo.createLinearGradient(0, 0, 0, 90);
+    gradientTwo.addColorStop(0, 'rgb(255,238,221)');
+    gradientTwo.addColorStop(1, '#fff');
+
+    this.lineSalesDataOne = {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+      datasets: [
+        {
+          pointStyle: 'circle',
+          fill: true,
+          backgroundColor: gradientOne,
+          borderColor: '#7367F0',
+          data: [100, 116, 99, 141, 115],
+          tension: 0.4,
+        },
+      ],
+    };
+
+    this.lineSalesDataTwo = {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+      datasets: [
+        {
+          pointStyle: 'circle',
+          fill: true,
+          backgroundColor: gradientTwo,
+          borderColor: '#ff9f43',
+          data: [100, 116, 99, 141, 115],
+          tension: 0.4,
+        },
+      ],
+    };
+  }
 }

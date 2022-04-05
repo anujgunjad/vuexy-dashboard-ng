@@ -20,6 +20,7 @@ import { MatTableModule } from '@angular/material/table';
 import { ClientTableComponent } from './client-table/client-table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
+import { NgApexchartsModule } from 'ng-apexcharts';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 
@@ -48,6 +49,7 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
+    NgApexchartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
