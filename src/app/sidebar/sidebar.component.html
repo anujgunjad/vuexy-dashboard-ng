@@ -1,4 +1,4 @@
-<div class="sdbr">
+<div class="sdbr" #divToScroll>
   <div class="sdbr_icn">
     <div class="sdbr_icn-left">
       <img
@@ -8,20 +8,64 @@
       <span>Vuexy</span>
     </div>
     <div class="sdbr_icn-right">
-      <mat-icon>highlight_off</mat-icon>
+      <svg
+        style="color: #7367f0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20px"
+        height="20px"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="d-none d-xl-block collapse-toggle-icon feather feather-disc"
+      >
+        <circle cx="12" cy="12" r="10"></circle>
+        <circle cx="12" cy="12" r="3"></circle>
+      </svg>
     </div>
   </div>
-  <!-- <div class="shadow-bottom"></div> -->
+  <div class="shadow-bottom"></div>
   <nav class="nav_menu">
     <ul>
-      <a href="#" *ngFor="let data of sideBarData.data_one">
-        <li class="nav_menu_itm">
+      <li>
+        <a href="#" class="nav_menu_itm dashboard">
+          <div style="margin-left: 0.5rem">
+            <mat-icon class="material-icons-outlined" aria-hidden="false">
+              home
+            </mat-icon>
+            <span>Dashboard</span>
+          </div>
+          <div class="badge-arrow">
+            <span matBadge="2"></span>
+
+            <mat-icon
+              class="material-icons-outlined arrow-sdbr"
+              aria-hidden="false"
+            >
+              keyboard_arrow_down
+            </mat-icon>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="nav_menu_itm"
+          *ngFor="let data of sideBarData.data_one"
+        >
           <mat-icon class="material-icons-outlined" aria-hidden="false">{{
             data.icon
           }}</mat-icon>
           <span>{{ data.title }}</span>
-        </li>
-      </a>
+        </a>
+        <a href="#" class="nav_menu_itm analytics">
+          <mat-icon class="material-icons-outlined" aria-hidden="false"
+            >analytics</mat-icon
+          >
+          <span>Analytics</span>
+        </a>
+      </li>
+
       <li class="nav_header">
         <span>APPS & PAGES</span>
       </li>

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ApiService } from '../services/api.service';
-
+import { HostListener } from '@angular/core';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -16,7 +16,7 @@ export class SidebarComponent implements OnInit {
       next: (res) => {
         this.sideBarData = res;
       },
-      error: (err) => {
+      error: (_err) => {
         alert('Error while fetching the Records!');
       },
     });

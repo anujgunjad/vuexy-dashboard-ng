@@ -98,6 +98,13 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .cg-img-left {
+    width: 17rem !important;
+  }
+
+  .cg-img-right {
+    width: 14.5rem !important;
+  }
 }
 .c12 {
   padding-right: 1.3rem;
@@ -120,7 +127,7 @@
   box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
   flex: 1 1 auto;
   transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: none !important;
   .card-header {
     border-bottom: none;

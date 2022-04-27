@@ -36,7 +36,7 @@ html {
 
 @media only screen and (max-width: 576px) {
   html {
-    font-size: 55.5%;
+    font-size: 58.5%;
   }
 }
 
@@ -71,7 +71,7 @@ canvas {
   overflow-y: scroll; /* Add the ability to scroll */
   scrollbar-width: none; /* Firefox 64 */
   z-index: 99999999;
-
+  overflow: scroll;
   &::-webkit-scrollbar {
     display: none;
   }

@@ -137,10 +137,32 @@
     </div>
 
     <div class="right_icons">
+      <a
+        style="display: flex; align-items: center; text-decoration: none"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+        href="#dropdown-grouped"
+        ><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAA1CAMAAACA7r40AAAA/FBMVEWyIjNPN2Y8O27///8/PnBOTXxycpY9PG9RUX5HR3dIR3dLSnlPTny4uMpWVYFFRHVwb5VlZIx7e52DgqOIh6aIiKc+PXBJSHhTUn9hYYqyIjReXohgX4lYV4Lr6/C2tcjPdYB0c5haWYRYV4Nra5GJiac+PW/FxdTHYG1RUH3eoajltbtOTXvty89BQHHg3+hSUX6GYoC6usyVlbFycZa7u8yUk6+sq8FCQXO0tMe1tMhiYYpMS3pDQnNvbpTExNN8fJ7GxdTGxtWCgqLHx9WXlrLXi5SYl7Kiobrg4Oiiorrn5u3n5+2jo7ukpLvw8PTx8fX09Pf19firqsC5sMNxAAAAAnRSTlPQ9qN1Xw4AAAGlSURBVHhe7ZXFiiRBFEVjznvp5W7t7j3u7m7//y8D1dAMGbnI4jW5KOpsgjibCxFcrrtVEmcBGAGQJHB98d3EgEM/ygsg/nwRAy15rxQ4Ywh3JQX49hVgKA/Ad1hDkkGTMSQJjGkOEmo133FmwAEQyl8FfSj3gFgkzjsQAw6AZ796AP2fGcDBS8/ZQ7ZQlJ2d+bEFqp6zhuh9Cf9/pDtKkTs04KBTD4jgx3eICOodoshz1p7M6UUAUQ+Ap2Pf2UMI5UBBX18/Ut7ZQ84Jui10QKsbcA7dt77jxIBDt+sxMNzrD4HL+rZS4Iw9iTZkCjRFmsBUHkcUOGMI7dkpKezuQsrprM3zR76zN572ekdBX623gaONJ0d5B5sGHAA1+QTwRQJgX2Q/7+w9GZGlDZKERpoxgkbDc8s0WscGSo+WGMiNVlgwWuFNjdafPsDe7wzg3RvP2UNCFGVtbX6EoOo7PhgoO1rGnswHiquB4mqgfIcxpBTGkNslMf2JVMAShRxXgJtUwBKFbFbAqicL4U4qYNWThXCHFbDqyUK4swpY9WQhXBX8A2rVjaQ6HWXmAAAAAElFTkSuQmCC"
+          alt="en"
+          width="22"
+          height="14"
+          class=""
+        /><span
+          style="
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+            color: #6e6b7b !important;
+          "
+          >English</span
+        ></a
+      >
       <div class="icon_group" style="margin-right: 1rem">
         <button
           mat-icon-button
           aria-label="Example icon button with a vertical three dot icon"
+          class="moon-btn"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -209,6 +231,7 @@
             ></path>
           </svg>
         </button>
+        <span class="bell-badge" matBadge="5"></span>
         <button
           mat-icon-button
           aria-label="Example icon button with a vertical three dot icon"
@@ -229,6 +252,7 @@
             <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
           </svg>
         </button>
+        <span class="bell-badge" matBadge="6" matBadgeColor="warn"></span>
       </div>
 
       <div class="profile_section">
