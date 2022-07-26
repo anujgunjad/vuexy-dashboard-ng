@@ -19,16 +19,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { ClientTableComponent } from './client-table/client-table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
-<<<<<<< HEAD
 import { MatBadgeModule } from '@angular/material/badge';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { ApexRadialComponent } from './apex-radial/apex-radial.component';
-=======
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
->>>>>>> master
 
 @NgModule({
   declarations: [
@@ -53,15 +49,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-<<<<<<< HEAD
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
     NgApexchartsModule,
     MatBadgeModule,
-=======
-    NgbModule,
->>>>>>> master
   ],
   providers: [],
   bootstrap: [AppComponent],

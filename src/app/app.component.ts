@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { MediaMatcher } from '@angular/cdk/layout';
 import {
   ChangeDetectorRef,
@@ -6,23 +5,15 @@ import {
   HostListener,
   OnDestroy,
 } from '@angular/core';
-=======
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
->>>>>>> master
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-<<<<<<< HEAD
 export class AppComponent implements OnDestroy {
-=======
-export class AppComponent implements OnInit, OnChanges {
->>>>>>> master
   title = 'angular-dashboard';
 
-<<<<<<< HEAD
   mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
@@ -57,22 +48,5 @@ export class AppComponent implements OnInit, OnChanges {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
-=======
-  constructor() {
-    console.log('Constructor called!');
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
-    console.log(changes);
-    console.log('ngOnChanges called!');
-  }
-
-  ngOnInit() {
-    console.log('ngOnInit called!');
-  }
-
-  toggleSidebar() {
-    this.sidebarFlag = !this.sidebarFlag;
->>>>>>> master
   }
 }
