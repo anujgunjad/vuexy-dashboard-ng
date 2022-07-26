@@ -37,6 +37,7 @@
   }
 }
 
+<<<<<<< HEAD
 // .shadow-bottom {
 //   position: absolute;
 //   z-index: 2;
@@ -50,6 +51,15 @@
 //     hsla(0, 0%, 100%, 0)
 //   );
 // }
+=======
+.nav_menu {
+  padding: 0 2.4rem;
+
+  ul {
+    padding-left: 0 !important;
+  }
+}
+>>>>>>> master
 
 .nav_menu {
   margin: 0 15px;
